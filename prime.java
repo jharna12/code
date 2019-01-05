@@ -5,13 +5,18 @@ public class number
 {
 Scannersc=new Scanner(System.in);
 int n=sc.nextInt();
-int q=sc.nextInt();
-for(int i=n;i<=q;i++)
+int t=0;
+for(int i=2;i<n;i++)
 {
-if(i%2==0)
+if(n%i==0)
 {
-System.out.println(i);
+t=1;
+break;
 }
 }
+if(t==1)
+System.out.println(" Not Prime");
+else
+System.out.println("Prime");
 }
 }

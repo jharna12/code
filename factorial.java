@@ -5,13 +5,11 @@ public class number
 {
 Scannersc=new Scanner(System.in);
 int n=sc.nextInt();
-int q=sc.nextInt();
-for(int i=n;i<=q;i++)
+int f=1;
+for(int i=1;i<=n;i++)
 {
-if(i%2==0)
-{
-System.out.println(i);
+f=f*i;
 }
-}
+System.out.println(f);
 }
 }
